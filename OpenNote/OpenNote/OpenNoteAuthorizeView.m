@@ -141,7 +141,7 @@
 	NSString *urlString = webview.request.URL.absoluteString;
 	NSLog(@"loaded url string: %@", urlString);
 	//NSLog(@"verifier? %d", [urlString rangeOfString:@"oauth_verifier"].location != NSNotFound);
-	if ([urlString hasPrefix:@"http://note.youdao.com"]) {
+	if ([urlString hasPrefix:@"http://m.youdao.com"]) {
 		if ([self.delegate respondsToSelector:@selector(authorizeView:authorizedWithToken:verifier:)]) {
 			NSString *query = webview.request.URL.query;
 			NSDictionary *queryPair = [[NSMutableString stringWithString:query] queryToDictionary];

@@ -514,7 +514,7 @@
                          OpenNoteAuthorizePath,
                          requestToken,
                          //authorizedURLScheme];
-						 @"http://note.youdao.com/"];
+						 @"http://m.youdao.com/"];
         //NSLog(@"得到request token: %@，组装url: %@，打开safari，用户授权", token, url);
         //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
         NSLog(@"得到request token: %@，组装url: %@，打开web view，用户授权", token, url);
